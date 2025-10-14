@@ -8,17 +8,10 @@
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene fog="type: exponential; color: #A61733; density: 0.1">
+    <a-scene fog="type: exponential; color: #A61733; density: 0.2">
 
-      <a-assets>
-        <a-asset-item id="Mice" src="assets/Mice.glb"></a-asset-item>
-        <a-asset-item id="airplane-gltf" src="assets/Small Airplane.glb"></a-asset-item>
-        <a-asset-item id="couch" src="assets/Couch Small.glb"></a-asset-item>
-        <a-asset-item id="table" src="assets/Table Round Small.glb.glb"></a-asset-item>
-        <a-asset-item id="lamp" src="assets/Lamp With Shade.glb"></a-asset-item>
-      </a-assets>
-      
-
+     
+    
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#62003A" scale="10 10 1"></a-plane>
       <a-sky color="#A61733"></a-sky>
       <a-camera> </a-camera>
@@ -27,6 +20,14 @@
       <a-entity gltf-model="assets/Table Round Small.glb" position="0.08047 0.03247 -1.68045" scale="0.5 0.5 0.5"></a-entity>
       <a-entity gltf-model="assets/Lamp With Shade.glb" position="0.09419 0.59138 -1.65478" scale="1.5 1.5 1.5"></a-entity>
 
+      <a-entity gltf-model="assets/Ceiling fan.glb" position="0.2 0.1 -2" scale="0.5 0.5 0.5"></a-entity>
+
+      <a-cone position="0.09461 1.03522 -1.65639" radius-bottom="0.2" radius-top="0.05" height="0.5" color="#FF8D4D" material="emissive: #FF8D4D" scale="1 0.5 1" light="color: #FF8D4D; intensity: 0.05"></a-cone>
+
+      <a-light type="point" color="#62003A" intensity="2" position="0 2 -2"></a-light>
+      
     </a-scene>
   </body>
 </html>
+
+
