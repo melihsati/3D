@@ -8,7 +8,7 @@
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene>
+    <a-scene fog="type: exponential; color: #EF2D5E; density: 0.05">
 
       <a-assets>
         <a-asset-item id="Mice" src="assets/Mice.glb"></a-asset-item>
@@ -29,6 +29,9 @@
       <a-camera> </a-camera>
       <a-entity gltf-model="assets/Mice.glb" position="-4.25235 3.63513 -3" scale="0.5 0.5 0.5"></a-entity>
       <a-entity gltf-model="assets/Small Airplane.glb" position="-4.1476 3.03608 -1.9885" scale="0.5 0.5 0.5" rotation="0 180 0"></a-entity>
+
+      <a-entity light="color: #EF2D5E; type: ambient" data-aframe-default-light="" aframe-injected="" position="0 5.94238 0"></a-entity>
+      <a-entity light="color: #d9d320; intensity: 1.884; castShadow: true" position="-4.15053 6.20405 5.23646" data-aframe-default-light="" aframe-injected=""></a-entity>
 
       
 
