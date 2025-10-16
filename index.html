@@ -99,6 +99,18 @@
       
       
       <a-light type="point" color="#62003A" intensity="2" position="0 2 -2"></a-light>
+
+
+      <a-entity
+          laser-controls="hand: left"
+          raycaster="objects: .clickable; far: 20; showLine: true"
+          position="-0.5 1.5 -0.5"
+        ></a-entity>
+        <a-entity
+          laser-controls="hand: right"
+          raycaster="objects: .clickable; far: 20; showLine: true"
+          position="0.5 1.5 -0.5"
+        ></a-entity>
       
     </a-scene>
   </body>
