@@ -20,8 +20,9 @@
           <a-entity gltf-model="assets/Couch Small.glb" position="0.08055 0.08888 -3" scale="0.5 0.5 0.5"></a-entity>
           <a-entity gltf-model="assets/Table Round Small.glb" position="0.08047 0.03247 -1.68045" scale="0.5 0.5 0.5"></a-entity>
           <a-entity gltf-model="assets/Lamp With Shade.glb" position="0.09419 0.59138 -1.65478" scale="1.5 1.5 1.5"></a-entity>
-          <a-cone position="0.09461 1.03522 -1.65639" radius-bottom="0.2" radius-top="0.05" height="0.5" color="#FF8D4D" material="emissive: #FF8D4D" scale="1 0.5 1" light="color: #FF8D4D; intensity: 0; type: point"></a-cone>
+          <a-cone position="0.09461 1.03522 -1.65639" radius-bottom="0.2" radius-top="0.05" height="0.5" color="#FF8D4D" material="emissive: #FF8D4D" scale="1 0.5 1" light="color: #FF8D4D; intensity: 0; type: point" class="clickable" event-set__click="_event: click; visible: false" event-set__enter="_event: mouseenter; color: #58ff4d" event-set__leave="_event: mouseleave; color: #58ff4d"></a-cone>
       </a-entity>
+      
 
       <a-entity position="-0.02691 0 0" rotation="0 50 0">
           <a-entity gltf-model="assets/Couch Small.glb" position="0.08055 0.08888 -3" scale="0.5 0.5 0.5" rotation="0 80 0"></a-entity>
@@ -94,7 +95,7 @@
       </a-entity>
 
 
-      <a-entity gltf-model="assets/Pot plant.glb" position="0 0.58405 -5.60666" scale="7 7 7"></a-entity>
+      <a-entity gltf-model="assets/Pot Plant.glb" position="0 0.58405 -5.60666" scale="7 7 7"></a-entity>
       
       
       <a-light type="point" color="#62003A" intensity="2" position="0 2 -2"></a-light>
